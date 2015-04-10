@@ -87,7 +87,7 @@ You now have a VirtualBox VM with:
 - Port 1433 on the host is forwarded to port 1433 on the guest, so from
   the host, you can connect to SQL Server Express by connecting to
   `localhost:1433`.
-- You can RDP to the host by doing `vagrant rdp`.
+- You can [RDP][] to the host by doing `vagrant rdp`.
 - `vagrant ssh` will not work out of the box,
 because the guest has no ssh server. If you are
 determined to use ssh, you can look into
@@ -108,5 +108,6 @@ also send PowerShell commands over WinRM), etc.
 [devmonkeys/database]: http://code.corp.surveymonkey.com/devmonkeys/database
 [SQLCMD]: https://msdn.microsoft.com/en-us/library/ms162773.aspx
 [Cygwin]: https://www.cygwin.com/
+[RDP]: http://en.wikipedia.org/wiki/Remote_Desktop_Protocol
 [winsshd]: https://www.bitvise.com/ssh-server
 [freesshd]: http://www.freesshd.com/
