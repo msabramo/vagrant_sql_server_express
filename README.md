@@ -15,7 +15,7 @@ have a good connection.
 vagrant up
 ```
 
-To verify that the VM started, you can use the `tsql` utility bundled
+To verify that the VM started and that you can connect to the database from your host machine, you can use the `tsql` utility bundled
 with FreeTDS. E.g.:
 
 ```
