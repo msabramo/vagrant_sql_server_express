@@ -18,7 +18,10 @@ vagrant up
 If this works, then (perhaps after a long time downloading),
 a new VirtualBox window should appear and it will boot into a
 very stripped-down Windows environment
-with 2 windows and no start menu, task bar, system tray, etc. 
+with 2 windows and no start menu, task bar, system tray, etc.
+
+![Screenshot](screenshot.png)
+
 You won't see any sign of SQL Server running, but hopefully you
 can connect to it from your host machine...
 
@@ -65,10 +68,6 @@ You now have a VirtualBox VM with:
   - Has a login called `vagrant` with password `vagrant`
   - Management tools (e.g.: SSMS) are **not** included, as these are not
     supported on the free Hyper-V Server product. However, [SQLCMD][] is available.
-
-# Screenshot
-
-![Screenshot](screenshot.png)
 
 # Tips
 
