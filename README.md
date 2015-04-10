@@ -88,6 +88,11 @@ You now have a VirtualBox VM with:
   the host, you can connect to SQL Server Express by connecting to
   `localhost:1433`.
 - You can RDP to the host by doing `vagrant rdp`.
+- `vagrant ssh` will not work out of the box,
+because the guest has no ssh server. If you are
+determined to use ssh, you can look into
+installing an ssh server like winsshd, freesshd,
+the openssh package from Cygwin, etc.
 
 [Vagrant]: https://www.vagrantup.com/
 [VirtualBox]: https://www.virtualbox.org/
