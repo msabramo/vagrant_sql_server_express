@@ -91,8 +91,12 @@ You now have a VirtualBox VM with:
 - `vagrant ssh` will not work out of the box,
 because the guest has no ssh server. If you are
 determined to use ssh, you can look into
-installing an ssh server like winsshd, freesshd,
-the openssh package from Cygwin, etc.
+installing an ssh server like [winsshd (Bitvise SSH Server)][], [freesshd][],
+the openssh package from Cygwin, etc. but you might be able to live without
+an ssh server, because you hopefully don't need to do much with the VM, or
+if you need to customize things, hopefully you can do it DevOps-style and
+do it by adding PowerShell commands to the `Vagrantfile`, ansible (which can
+also send PowerShell commands over WinRM), etc.
 
 [Vagrant]: https://www.vagrantup.com/
 [VirtualBox]: https://www.virtualbox.org/
@@ -104,3 +108,5 @@ the openssh package from Cygwin, etc.
 [devmonkeys/database]: http://code.corp.surveymonkey.com/devmonkeys/database
 [SQLCMD]: https://msdn.microsoft.com/en-us/library/ms162773.aspx
 [Cygwin]: https://www.cygwin.com/
+[winsshd]: https://www.bitvise.com/ssh-server
+[freesshd]: http://www.freesshd.com/
