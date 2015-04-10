@@ -15,7 +15,17 @@ have a good connection.
 vagrant up
 ```
 
-To verify that the VM started and that you can connect to the database from your host machine, you can use the `tsql` utility bundled
+If this works, then (perhaps after a long time downloading),
+a new VirtualBox window should appear and it will boot into a
+very stripped-down Windows environment
+with 2 windows and no start menu, task bar, system tray, etc. 
+You won't see any sign of SQL Server running, but hopefully you
+can connect to it from your host machine...
+
+# Connect to database remotely from host machine
+
+To verify that the VM started and that you can connect to the database
+from your host machine, you can use the `tsql` utility bundled
 with FreeTDS. E.g.:
 
 ```
