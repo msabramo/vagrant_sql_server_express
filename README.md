@@ -32,19 +32,12 @@ from your host machine, you can use the `tsql` utility bundled
 with FreeTDS. E.g.:
 
 ```
-$ tsql -H localhost -p 1433 -U vagrant -P vagrant
-locale is "en_US.UTF-8"
-locale charset is "UTF-8"
-using default charset "UTF-8"
-1> SELECT @@VERSION
-2> GO
+$ echo "SELECT @@VERSION\nGO" | tsql -H localhost -p 1433 -U vagrant -P vagrant -o q
 
 Microsoft SQL Server 2014 - 12.0.2000.8 (X64)
-Feb 20 2014 20:04:26
-Copyright (c) Microsoft Corporation
-Express Edition (64-bit) on Windows NT 6.3 <X64> (Build 9600: )
-
-(1 row affected)
+  Feb 20 2014 20:04:26
+  Copyright (c) Microsoft Corporation
+  Express Edition (64-bit) on Windows NT 6.3 <X64> (Build 9600: )
 ```
 
 # Details
