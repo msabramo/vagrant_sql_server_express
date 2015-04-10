@@ -89,6 +89,8 @@ an ssh server, because you hopefully don't need to do much with the VM, or
 if you need to customize things, hopefully you can do it DevOps-style and
 do it by adding PowerShell commands to the `Vagrantfile`, ansible (which can
 also send PowerShell commands over WinRM), etc.
+- To see the list of services that are running, you can do `net start` from the
+command prompt or PowerShell.
 
 [Vagrant]: https://www.vagrantup.com/
 [VirtualBox]: https://www.virtualbox.org/
