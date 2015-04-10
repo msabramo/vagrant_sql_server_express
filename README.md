@@ -40,6 +40,34 @@ Microsoft SQL Server 2014 - 12.0.2000.8 (X64)
   Express Edition (64-bit) on Windows NT 6.3 <X64> (Build 9600: )
 ```
 
+You could also try connecting via Python with [pymssql][]:
+
+```
+$ ipython
+Python 2.7.9 (v2.7.9:648dcafa7e5f, Dec 10 2014, 10:10:46)
+Type "copyright", "credits" or "license" for more information.
+
+IPython 2.0.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: import pymssql
+
+In [2]: conn = pymssql.connect(server='localhost', user='vagrant', password='vagrant')
+
+In [3]: cursor = conn.cursor()
+
+In [4]: cursor.execute("SELECT @@VERSION")
+
+In [5]: row = cursor.fetchone()
+
+In [6]: print(row)
+(u'Microsoft SQL Server 2014 - 12.0.2000.8 (X64) \n\tFeb 20 2014 20:04:26 \n\tCopyright (c) Microsoft Corporation\n\tExpress Edition (64-bit) on Windows NT 6.3 <X64> (Build 9600: )\n',)
+```
+
+
 # Details
 
 You now have a VirtualBox VM with:
@@ -95,6 +123,7 @@ command prompt or PowerShell.
 [Vagrant]: https://www.vagrantup.com/
 [VirtualBox]: https://www.virtualbox.org/
 [FreeTDS]: http://www.freetds.org/
+[pymssql]: http://pymssql.org/
 [Hyper-V Server]: https://technet.microsoft.com/en-us/library/hh833684.aspx
 [SQL Server Express]: http://www.microsoft.com/en-us/server-cloud/products/sql-server-editions/sql-server-express.aspx
 [Chocolatey]: https://chocolatey.org/
