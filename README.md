@@ -19,8 +19,7 @@ To verify that the VM started, you can use the `tsql` utility bundled
 with FreeTDS. E.g.:
 
 ```
-$ tsql -H localhost -p 1433 -U vagrant
-Password:
+$ tsql -H localhost -p 1433 -U vagrant -P vagrant
 locale is "en_US.UTF-8"
 locale charset is "UTF-8"
 using default charset "UTF-8"
