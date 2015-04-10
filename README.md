@@ -29,7 +29,7 @@ can connect to it from your host machine...
 
 To verify that the VM started and that you can connect to the database
 from your host machine, you can use the `tsql` utility bundled
-with FreeTDS. E.g.:
+with [FreeTDS][]. E.g.:
 
 ```
 $ echo "SELECT @@VERSION\nGO" | tsql -H localhost -p 1433 -U vagrant -P vagrant -o q
@@ -92,6 +92,7 @@ also send PowerShell commands over WinRM), etc.
 
 [Vagrant]: https://www.vagrantup.com/
 [VirtualBox]: https://www.virtualbox.org/
+[FreeTDS]: http://www.freetds.org/
 [Hyper-V Server]: https://technet.microsoft.com/en-us/library/hh833684.aspx
 [SQL Server Express]: http://www.microsoft.com/en-us/server-cloud/products/sql-server-editions/sql-server-express.aspx
 [Chocolatey]: https://chocolatey.org/
