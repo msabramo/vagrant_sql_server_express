@@ -117,7 +117,7 @@ installing an ssh server like [winsshd][] (Bitvise SSH Server)], [freesshd][],
 the openssh package from Cygwin, etc. but you might be able to live without
 an ssh server, because you hopefully don't need to do much with the VM, or
 if you need to customize things, hopefully you can do it DevOps-style and
-do it by adding PowerShell commands to the `Vagrantfile`, ansible (which can
+do it by adding PowerShell commands to the `Vagrantfile` or use ansible (which can
 also send PowerShell commands over WinRM), etc.
 - To see the list of services that are running, you can do `net start` from the
 command prompt or PowerShell.
