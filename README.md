@@ -67,6 +67,8 @@ In [6]: print(row)
 (u'Microsoft SQL Server 2014 - 12.0.2000.8 (X64) \n\tFeb 20 2014 20:04:26 \n\tCopyright (c) Microsoft Corporation\n\tExpress Edition (64-bit) on Windows NT 6.3 <X64> (Build 9600: )\n',)
 ```
 
+or you could connect with a tool such as [DbVisualizer][] or [SQuirreL SQL Client][].
+
 
 # Details
 
@@ -135,3 +137,5 @@ command prompt or PowerShell.
 [RDP]: http://en.wikipedia.org/wiki/Remote_Desktop_Protocol
 [winsshd]: https://www.bitvise.com/ssh-server
 [freesshd]: http://www.freesshd.com/
+[DbVisualizer]: https://www.dbvis.com/
+[SQuirreL SQL Client]: http://squirrel-sql.sourceforge.net/
