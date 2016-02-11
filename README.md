@@ -10,7 +10,7 @@ Note: If you just need Windows Hyper-V Server 2012 R2 and do not need SQL Server
 # Install and start up
 
 The first time that you do this it will download a large Vagrant box
-file (about 2.7 GB) from the Internet, so you may want to wait until you
+file (about 2.7 GB) from https://atlas.hashicorp.com/msabramo/boxes/mssqlserver2014express, so you may want to wait until you
 have a good connection.
 
 ```bash
