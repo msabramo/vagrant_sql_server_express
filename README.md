@@ -6,6 +6,7 @@ Note: If you just need Windows Hyper-V Server 2012 R2 and do not need SQL Server
 
 - [Vagrant][]
 - [VirtualBox][]
+- [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest) (install with `vagrant plugin install vagrant-vbguest`)
 
 # Install and start up
 
