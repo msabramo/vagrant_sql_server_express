@@ -1,4 +1,6 @@
+-----
 # Deprecated - I no longer work with SQL Server, so I'm not planning any changes to this. If you want to adopt this project, get in touch with me.
+-----
 
 A lightweight VM with SQL Server 2014 Express
 
