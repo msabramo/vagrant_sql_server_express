@@ -1,3 +1,5 @@
+# Deprecated - I no longer work with SQL Server, so I'm not planning any changes to this. If you want to adopt this project, get in touch with me.
+
 A lightweight VM with SQL Server 2014 Express
 
 Note: If you just need Windows Hyper-V Server 2012 R2 and do not need SQL Server Express, then you might want to check out https://github.com/msabramo/vagrant_hyperv_server_free instead.
